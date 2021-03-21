@@ -1,0 +1,190 @@
+<!-- <div> take the wholeline of the page-->
+<!-- <span> of take the borders of a word or anything else we can ude it to color a selected word-->
+<!-- <main> is the same as div but specify that it is the div of the main page-->
+<!-- <header> same as div but specify the header of the page-->
+<!-- <section> same as div we can use it in headers by example it is a section of element-->
+<!-- <nav> is a navication buttonSSS-->
+<!--<footer> same as div but specify the buttom of the page-->
+<!--main header section footer and nav are all the same as div but we put same for the meaning of the name or to categorize them and for a better readable website-->
+
+
+<!-- i can press alt and select many lines and type in them -->
+<!DOCTYPE html>
+<html>
+
+<!-- to create nav bar in css *{padding:0; margin:0; text-decoration:none; list-style:none; box-sizing:borderbox;} -->
+
+<head>
+      <meta charset="UTF-8">
+      <title>test webpage</title>
+      <link rel="stylesheet" href="stylee.css">
+      <!--for rgb colors  #ff9900 ff=red 99=green 00=blue the numbers goes from 1 to 99  
+      and hexa colors 1 to 9 a,b,c,d,e,f   the numbers precise how strong the color you want 
+      or i can use this site https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool 
+or for hsl colors https://www.w3schools.com/colors/colors_hsl.asp  -->
+
+</head>
+
+<body>
+      <!--  <b> - Bold text
+            <strong> - Important text
+            <i> - Italic text
+            <em> - Emphasized text
+            <mark> - Marked text
+            <small> - Smaller text
+            <del> - Deleted text
+            <ins> - Inserted text
+            <sub> - Subscript text
+            <sup> - Superscript text
+            <u> underline    -->
+      <!-- (right click) >>command palette >> format document >> html format-->
+      <!-- joeghnatios@gmail.com		pass:Abouba12-->
+      <!--lorem*4 == some random text-->
+      <!--  <a href=""> is a hyperlink tag who allow us to put a link in the word 
+            or take us to it and we add target="_blank" to open the site on a new tab-->
+      <main>
+            <a href="cheatsheet-a5.pdf">press here to see emmet keyboard shortcuts</a>
+            <h1>OBAMA</h1>
+            <!--H1 ==> H6 HEADINGS-->
+            <h2>OBAMA</h2>
+            <div style="background-color:red; font-size:30px">THIS IS A DIV</div>
+            <span style="background-color:rgb(255, 0, 170); font-size:30px">THIS IS A span</span>
+            <p>After graduating from Columbia University as an undergrad, Obama worked in the business sector for
+                  two years. He moved to Chicago in <b>1985</b><br>
+                  <hr>, where he worked on the impoverished South Side as a community
+                  <!--<p> is a paragraph-->
+                  organizer for low-income residents in the Roseland and the Altgeld Gardens communities.
+            </p>
+            <!--br go to a new line hr put a line-->
+            <!--use figure to specify that this is a picture section and we can add a caption to the picture-->
+            <!-- THIS IS A PICTURE OF ALL DIVS-->
+            <figure>
+                  <img src="instead of div.png" alt="picture of divs" width="500px" height="300px">
+                  <figcaption>this is a picture of divs elements</figcaption>
+            </figure>
+
+            <!--<ul> == unordered list  <li> == ligne-->
+            <!--<ol> == ordered list <li> == ligne-->
+            <h2>THIS IS A LIST</h2>
+            <ul type="square">
+                  <!-- default is a circle-->
+                  <li>first ligne</li>
+                  <li>second ligne</li>
+                  <li>third ligne</li>
+            </ul>
+            <ol type="I">
+                  <!--  A for abc        I for roman numbers       1   for numbers 1234-->
+                  <li><a href="https://academy.ehacking.net/courses/enrolled?query=hacking" target="_blank">first
+                              ligne</a>
+                  </li>
+                  <!--href="put site here"       target="_blank" ==> open site in a new tab -->
+                  <li>second ligne</li>
+                  <li>third ligne
+                        <ol>
+                              <li>1 list inside a list</li>
+                              <li>2 list inside a list</li> <!-- list inside the third ligne-->
+                              <li>3 list inside a list</li>
+
+                        </ol>
+                  </li>
+            </ol>
+            <!-- in TABLE <tr> ==> table row ---- <th> ==> table row ---- <td> ==> table data -->
+            <!--we can use in table colspan and rowspan-->
+            <h1>input types</h1>
+            <img src="input.png" alt="input0" width="700px">
+            <img src="input 1.png" alt="input1" width="700px">
+            <img src="input 2.png" alt="input2" width="700px">
+            <img src="input 3.png" alt="input3" width="700px">
+
+            <h1>Attributte</h1>
+            <img src="attributte.png" alt="atr" width="700px">
+            <img src="attributte 1.png" alt="atr1" width="700px">
+            <img src="attributte 2.png" alt="atr2" width="700px">
+            <img src="attributte 3.png" alt="atr3" width="700px">
+
+            <!-- <form action="/otherpagename">-->
+
+            <h1>sign up</h1>
+            <form action="/signup">
+                  <!--add (required) to any input-->
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required minlength="3" maxlength="12">
+                  <br>
+                  <label for="lname">Last name:</label>
+                  <input type="text" id="lname" name="lname" required>
+                  <br>
+                  <label for="user">Username:</label>
+                  <input type="text" id="user" name="username" required>
+                  <br>
+                  <label for="pass">Password:</label>
+                  <input type="password" id="pass" name="password" maxlength="8" required>
+                  <br>
+                  <label for="mail">Email:</label>
+                  <input type="email" id="mail" name="mail" required>
+                  <br>
+                  <label for="tel">Telephone:</label>
+                  <input type="tel" id="tel" name="tel">
+                  <br>
+                  <button type="submit">Submit</button>
+                  <button type="reset">Reset</button>
+
+            </form>
+            <h1>Search on google</h1>
+            <form action="https://www.google.com/search" target="_blank">
+                  <input type="text" name="q" id="google" placeholder="search on google">
+                  <button type="submit">Search</button>
+                  <button type="reset">Clear</button>
+            </form>
+            <h1>search on youtube</h1>
+            <form action="https://www.youtube.com/results" target="_blank">
+                  <input type="text" name="search_query" id="yt" placeholder="search on youtube">
+                  <button type="submit">Search</button>
+                  <button type="reset">Clear</button>
+            </form>
+            <!-- we can put checked in checkbox-->
+            <!-- checkbox we can choose manny boxes-->
+            <!-- in radio we can only choose one and all have the same id-->
+            <!-- i can add selected in option in select-->
+
+            <!-- line-height:number; to make spaces between lines -->
+            <!-- we can put min and max in type="number " or type="range" and step="number" -->
+            <!-- letter-spacing put distance between every letter -->
+            <!-- css fonts https://www.cssfontstack.com/ -->
+            <!-- https://coolors.co/palettes/trending for colors -->
+           <!-- in css i can seleczt many element example : h1,h2{ color:red} orrr ul li ul {font-size} orr h1+p{ it take the paragraph right after the h1} -->
+                <!-- or h1>p{it take the p inside the h1} -->
+      <!-- if i have  by example many text input i can select them with input[type=text]{color} -->
+      <h1>hover active and more</h1>
+      <img src="hover and more.png" alt="hover">
+      
+      <!-- in chrome orange is margin green is padding blue is the box content -->
+      
+      <!--::first-line ::first-letter ::selection change font or background color in css of selected text -->
+      
+      <!-- inherit in css it take the closes parents specification example the color or font size -->
+      <!-- box-sizing:border-box it take the width and height if the original size vey important and usefull -->
+      <!-- example border: width style color;;;;; h1: width style color;;;; -->
+      <!-- display:block it make it like a div take the whole line and inline make it like a span and inline-block we can put 
+            many div or pictures next to each others -->
+<!-- em valuue take the parent size 1em or 2 em double the size of the paremt size ....... on font-size only and others 
+      like margin paddint take the size of font-size       -->
+<!-- rems value take the size of the <html> the problem with em if i use them in ul they keep duplicating the size -->
+      <!-- if i use rgba in colors (255,255,255,0) the a color contorl the the transparency on the selected element -->
+<!-- and opacity from 0 to 1 it control the transparency of the selected element and what it conain -->
+<!-- position:static is the default i cant use top bottpm left right ////  position:relative i can move it left right
+       top bottom and if goes above the others  and leave a empty space and it move t b l r depending on the empty space-->
+<!-- position:absolute  go above the other elements but dont leave and empty space like flowing above the others and it move t b l r 
+      depending on parents position if ther is no parents position it take the body borders -->
+<!-- position:fixed move left tp botton rught depending on the body order and stay there even  if i scrolled the page down or up  -->
+<!-- position sticky stay the same place but go down while scrolling -->
+<!-- i can use transition in hover for animation and for transition timing https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function -->
+
+<!--cursor:pointer-->
+<!-- google  fonts https://fonts.google.com/ -->
+<!-- i can use calc() to calculate distance or whatever example  if i have 3 picture of 30% that man total of 90% and i want to put a margin between them i can put margin: calc(10%/6) because they have 6 borders -->
+
+
+</main>
+</body>
+
+</html>
